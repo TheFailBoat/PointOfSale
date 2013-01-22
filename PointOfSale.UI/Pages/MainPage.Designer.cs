@@ -30,8 +30,8 @@
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.quantityInputPanel1 = new PointOfSale.UI.Controls.QuantityInputPanel();
-            this.itemSelectPanel1 = new PointOfSale.UI.Controls.ActionSelectPanel();
-            this.itemSelectPanel2 = new PointOfSale.UI.Controls.ActionSelectPanel();
+            this.itemPanel = new PointOfSale.UI.Controls.ActionSelectPanel();
+            this.categoryPanel = new PointOfSale.UI.Controls.ActionSelectPanel();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -41,8 +41,8 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75F));
             this.tableLayoutPanel1.Controls.Add(this.quantityInputPanel1, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.itemSelectPanel1, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.itemSelectPanel2, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.itemPanel, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.categoryPanel, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -60,22 +60,28 @@
             this.quantityInputPanel1.Size = new System.Drawing.Size(355, 120);
             this.quantityInputPanel1.TabIndex = 0;
             // 
-            // itemSelectPanel1
+            // itemPanel
             // 
-            this.itemSelectPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.itemSelectPanel1.Location = new System.Drawing.Point(123, 3);
-            this.itemSelectPanel1.Name = "itemSelectPanel1";
-            this.itemSelectPanel1.Size = new System.Drawing.Size(355, 372);
-            this.itemSelectPanel1.TabIndex = 1;
+            this.itemPanel.ButtonColour = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.itemPanel.Columns = 1;
+            this.itemPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.itemPanel.Location = new System.Drawing.Point(123, 3);
+            this.itemPanel.Name = "itemPanel";
+            this.itemPanel.Rows = 4;
+            this.itemPanel.Size = new System.Drawing.Size(355, 372);
+            this.itemPanel.TabIndex = 1;
             // 
-            // itemSelectPanel2
+            // categoryPanel
             // 
-            this.itemSelectPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.itemSelectPanel2.Location = new System.Drawing.Point(3, 3);
-            this.itemSelectPanel2.Name = "itemSelectPanel2";
-            this.tableLayoutPanel1.SetRowSpan(this.itemSelectPanel2, 2);
-            this.itemSelectPanel2.Size = new System.Drawing.Size(114, 498);
-            this.itemSelectPanel2.TabIndex = 2;
+            this.categoryPanel.ButtonColour = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.categoryPanel.Columns = 1;
+            this.categoryPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.categoryPanel.Location = new System.Drawing.Point(3, 3);
+            this.categoryPanel.Name = "categoryPanel";
+            this.categoryPanel.Rows = 4;
+            this.tableLayoutPanel1.SetRowSpan(this.categoryPanel, 2);
+            this.categoryPanel.Size = new System.Drawing.Size(114, 498);
+            this.categoryPanel.TabIndex = 2;
             // 
             // MainPage
             // 
@@ -93,7 +99,7 @@
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private Controls.QuantityInputPanel quantityInputPanel1;
-        private Controls.ActionSelectPanel itemSelectPanel1;
-        private Controls.ActionSelectPanel itemSelectPanel2;
+        private Controls.ActionSelectPanel itemPanel;
+        private Controls.ActionSelectPanel categoryPanel;
     }
 }

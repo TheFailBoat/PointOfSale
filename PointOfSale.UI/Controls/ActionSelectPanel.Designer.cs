@@ -28,24 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.Layout = new System.Windows.Forms.TableLayoutPanel();
             this.SuspendLayout();
             // 
-            // label1
+            // Layout
             // 
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(296, 386);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "TODO: Action Select Panel";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Layout.ColumnCount = 1;
+            this.Layout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.Layout.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Layout.Location = new System.Drawing.Point(0, 0);
+            this.Layout.Name = "Layout";
+            this.Layout.RowCount = 1;
+            this.Layout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.Layout.Size = new System.Drawing.Size(296, 386);
+            this.Layout.TabIndex = 0;
             // 
             // ActionSelectPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.Layout);
             this.Name = "ActionSelectPanel";
             this.Size = new System.Drawing.Size(296, 386);
             this.ResumeLayout(false);
@@ -54,6 +56,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TableLayoutPanel Layout;
+
     }
 }

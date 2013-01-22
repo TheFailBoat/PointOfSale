@@ -16,10 +16,5 @@ namespace PointOfSale.UI
         {
             InitializeComponent();
         }
-
-        private void billControl1_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

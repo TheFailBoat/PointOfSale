@@ -69,7 +69,6 @@
             this.tableLayoutPanel1.SetRowSpan(this.billControl1, 2);
             this.billControl1.Size = new System.Drawing.Size(498, 723);
             this.billControl1.TabIndex = 1;
-            this.billControl1.Load += new System.EventHandler(this.billControl1_Load);
             // 
             // mainPage1
             // 
