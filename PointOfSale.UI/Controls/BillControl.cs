@@ -1,20 +1,24 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PointOfSale.UI.Controls
 {
     public partial class BillControl : UserControl
     {
+        private Timer timeTimer;
+
         public BillControl()
         {
             InitializeComponent();
+
+            Load += BillControlLoad;
+        }
+
+        void BillControlLoad(object sender, EventArgs e)
+        {
+            timeTimer = new Timer { Interval = 1000 };
+            timeTimer.Tick += (s, a) => TimeLabel.Text = DateTime.Now.ToString();
+            timeTimer.Start();
         }
     }
 }
