@@ -61,6 +61,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(484, 709);
             this.tableLayoutPanel1.TabIndex = 0;
+            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // BillDetailsList
             // 
@@ -100,7 +101,7 @@
             this.PrintButton.Name = "PrintButton";
             this.PrintButton.Size = new System.Drawing.Size(236, 90);
             this.PrintButton.TabIndex = 3;
-            this.PrintButton.Text = "Print";
+            this.PrintButton.Text = "Print Bill";
             this.PrintButton.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel2

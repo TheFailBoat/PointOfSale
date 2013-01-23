@@ -20,5 +20,10 @@ namespace PointOfSale.UI.Controls
             timeTimer.Tick += (s, a) => TimeLabel.Text = DateTime.Now.ToString();
             timeTimer.Start();
         }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
