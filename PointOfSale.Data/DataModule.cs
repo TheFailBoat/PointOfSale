@@ -14,6 +14,9 @@ namespace PointOfSale.Data
 
             // Register Repository<T>
             builder.RegisterGeneric(typeof (Repository<>)).As(typeof(IRepository<>));
+
+            // Register DbContext
+            builder.Register(x => new DbContext()).AsSelf();
         }
     }
 }

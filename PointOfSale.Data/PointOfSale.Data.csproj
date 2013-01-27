@@ -53,6 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataModule.cs" />
+    <Compile Include="DbContext.cs" />
     <Compile Include="EfDataContext.cs" />
     <Compile Include="Entities\Configurations\BillConfiguration.cs" />
     <Compile Include="Entities\Configurations\CategoryConfiguration.cs" />
