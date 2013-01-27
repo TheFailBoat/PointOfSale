@@ -1,8 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.Web.Mvc;
 using System.Windows.Forms;
+using Autofac;
+using Autofac.Integration.Mvc;
+using PointOfSale.Data;
 
 namespace PointOfSale.UI
 {
@@ -14,9 +15,21 @@ namespace PointOfSale.UI
         [STAThread]
         static void Main()
         {
+            var builder = new ContainerBuilder();
+
+            BuildContainer(builder);
+
+            var container = builder.Build();
+            DependencyResolver.SetResolver(new AutofacDependencyResolver(container));
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MainEntryForm());
+        }
+
+        private static void BuildContainer(ContainerBuilder builder)
+        {
+            builder.RegisterModule<DataModule>();
         }
     }
 }

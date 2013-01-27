@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PointOfSale.Data.Entities
 {
-    class Table
+    public class Table : IEntity
     {
+        public Guid ID { get; set; }
     }
 }
