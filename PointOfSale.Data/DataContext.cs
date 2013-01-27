@@ -3,7 +3,7 @@ using PointOfSale.Data.Entities;
 
 namespace PointOfSale.Data
 {
-    public class DbContext
+    public class DataContext
     {
         public IRepository<Bill> Bills { get { return GetRepository<Bill>(); } }
         public IRepository<Category> Categories { get { return GetRepository<Category>(); } }
