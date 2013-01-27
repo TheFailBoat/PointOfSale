@@ -1,6 +1,7 @@
 ﻿using System.Data.Common;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
+using System.Linq;
 
 namespace PointOfSale.Data
 {
@@ -19,9 +20,17 @@ namespace PointOfSale.Data
             ((IObjectContextAdapter)this).ObjectContext.Detach(entity);
         }
 
-        public DbSet<TModel> Table<TModel>() where TModel : class
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            return Set<TModel>();
+            var types = GetType().Assembly.GetExportedTypes().Where(x => typeof(IEntity).IsAssignableFrom(x));
+
+            foreach (var type in types)
+            {
+                typeof(DbModelBuilder)
+                    .GetMethod("Entity")
+                    .MakeGenericMethod(type)
+                    .Invoke(modelBuilder, new object[] { });
+            }
         }
     }
 }

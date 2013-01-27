@@ -1,39 +1,61 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
+using System.Linq.Expressions;
 
 namespace PointOfSale.Data
 {
-    public class Repository<T> : IRepository<T> where T : IEntity
+    public class Repository<T> : IRepository<T> where T : class, IEntity
     {
-        public IQueryable<T> Get()
+        private readonly EfDataContext ctx;
+        public Repository(EfDataContext ctx)
         {
-            throw new NotImplementedException();
+            this.ctx = ctx;
         }
 
-        public IQueryable<T> Get(System.Linq.Expressions.Expression<Func<T, bool>> predicate)
+        public IQueryable<T> Get()
         {
-            throw new NotImplementedException();
+            return ctx.Set<T>();
+        }
+        public IQueryable<T> Get(Expression<Func<T, bool>> predicate)
+        {
+            return Get().Where(predicate);
         }
 
         public T Get(Guid id)
         {
-            throw new NotImplementedException();
+            return Get(x => x.ID == id).SingleOrDefault();
         }
 
         public IEnumerable<T> SaveOrUpdate(params T[] entities)
         {
-            throw new NotImplementedException();
+            return entities.Select(SaveOrUpdate);
         }
 
         public T SaveOrUpdate(T entity)
         {
-            throw new NotImplementedException();
+            if (entity.ID == default(Guid))
+            {
+                ctx.Set<T>().Add(entity);
+            }
+            else
+            {
+                if (ctx.Entry(entity).State == EntityState.Detached)
+                {
+                    ctx.Set<T>().Attach(entity);
+                }
+                ctx.Entry(entity).State = EntityState.Modified;
+            }
+
+            ctx.SaveChanges();
+
+            return entity;
         }
 
         public void Delete(T entity)
         {
-            throw new NotImplementedException();
+            ctx.Set<T>().Remove(entity);
         }
     }
 }
