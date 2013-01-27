@@ -1,7 +1,8 @@
 ﻿using System.Web.Mvc;
 using PointOfSale.Data.Entities;
+using PointOfSale.Entity;
 
-namespace PointOfSale.Data
+namespace PointOfSale.Logic.Data
 {
     public class DataContext
     {

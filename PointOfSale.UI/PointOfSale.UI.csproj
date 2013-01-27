@@ -170,9 +170,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PointOfSale.Data\PointOfSale.Data.csproj">
-      <Project>{652691F4-FE2F-4C01-A723-C56A8343DAE7}</Project>
-      <Name>PointOfSale.Data</Name>
+    <ProjectReference Include="..\PointOfSale.Entity\PointOfSale.Entity.csproj">
+      <Project>{652691f4-fe2f-4c01-a723-c56a8343dae7}</Project>
+      <Name>PointOfSale.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PointOfSale.Logic\PointOfSale.Logic.csproj">
+      <Project>{5476e687-eb90-4057-aab3-2b349440db39}</Project>
+      <Name>PointOfSale.Logic</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

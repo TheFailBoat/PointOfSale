@@ -3,7 +3,7 @@ using System.Web.Mvc;
 using System.Windows.Forms;
 using Autofac;
 using Autofac.Integration.Mvc;
-using PointOfSale.Data;
+using PointOfSale.Logic.Data;
 
 namespace PointOfSale.UI
 {

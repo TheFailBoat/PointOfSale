@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace PointOfSale.Data.Entities
+namespace PointOfSale.Entity
 {
     public class Item : IEntity
     {

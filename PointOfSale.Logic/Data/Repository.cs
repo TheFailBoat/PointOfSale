@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Linq.Expressions;
+using PointOfSale.Entity;
 
-namespace PointOfSale.Data
+namespace PointOfSale.Logic.Data
 {
     public class Repository<T> : IRepository<T> where T : class, IEntity
     {

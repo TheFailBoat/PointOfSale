@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PointOfSale.Data.Entities
+namespace PointOfSale.Entity
 {
     public class Payment : IEntity
     {

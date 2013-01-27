@@ -1,6 +1,7 @@
 ﻿using Autofac;
+using PointOfSale.Entity;
 
-namespace PointOfSale.Data
+namespace PointOfSale.Logic.Data
 {
     public class DataModule : Module
     {

@@ -2,8 +2,9 @@
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
 using System.Linq;
+using PointOfSale.Entity;
 
-namespace PointOfSale.Data
+namespace PointOfSale.Logic.Data
 {
     public class EfDataContext : DbContext
     {

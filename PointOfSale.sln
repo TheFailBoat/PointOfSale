@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PointOfSale.UI", "PointOfSale.UI\PointOfSale.UI.csproj", "{A3CE25F1-427B-4480-8C19-4EA159BFA339}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PointOfSale.Data", "PointOfSale.Data\PointOfSale.Data.csproj", "{652691F4-FE2F-4C01-A723-C56A8343DAE7}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{EEBF00A4-5F35-40CC-B2B2-17CFBDFE95D4}"
 	ProjectSection(SolutionItems) = preProject
 		.nuget\NuGet.Config = .nuget\NuGet.Config
@@ -13,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{EEBF00
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PointOfSale.Logic", "PointOfSale.Logic\PointOfSale.Logic.csproj", "{5476E687-EB90-4057-AAB3-2B349440DB39}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PointOfSale.Entity", "PointOfSale.Entity\PointOfSale.Entity.csproj", "{652691F4-FE2F-4C01-A723-C56A8343DAE7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,14 +24,14 @@ Global
 		{A3CE25F1-427B-4480-8C19-4EA159BFA339}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3CE25F1-427B-4480-8C19-4EA159BFA339}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3CE25F1-427B-4480-8C19-4EA159BFA339}.Release|Any CPU.Build.0 = Release|Any CPU
-		{652691F4-FE2F-4C01-A723-C56A8343DAE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{652691F4-FE2F-4C01-A723-C56A8343DAE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{652691F4-FE2F-4C01-A723-C56A8343DAE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{652691F4-FE2F-4C01-A723-C56A8343DAE7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5476E687-EB90-4057-AAB3-2B349440DB39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5476E687-EB90-4057-AAB3-2B349440DB39}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5476E687-EB90-4057-AAB3-2B349440DB39}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5476E687-EB90-4057-AAB3-2B349440DB39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{652691F4-FE2F-4C01-A723-C56A8343DAE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{652691F4-FE2F-4C01-A723-C56A8343DAE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{652691F4-FE2F-4C01-A723-C56A8343DAE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{652691F4-FE2F-4C01-A723-C56A8343DAE7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,8 +4,9 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
+using PointOfSale.Entity;
 
-namespace PointOfSale.Data
+namespace PointOfSale.Logic.Data
 {
     public interface IRepository<T> : IRepository where T : IEntity
     {

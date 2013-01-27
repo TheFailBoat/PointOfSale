@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PointOfSale.Data
+namespace PointOfSale.Entity
 {
     public interface IEntity
     {
