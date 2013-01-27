@@ -1,15 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PointOfSale.Data
 {
-    public class Repository<T> : IRepository<T>
+    public class Repository<T> : IRepository<T> where T : IEntity
     {
-
-        public IQueryable<T> GetAll()
+        public IQueryable<T> Get()
         {
             throw new NotImplementedException();
         }
@@ -19,7 +16,12 @@ namespace PointOfSale.Data
             throw new NotImplementedException();
         }
 
-        public IEnumerable<T> SaveOrUpdateAll(params T[] entities)
+        public T Get(Guid id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IEnumerable<T> SaveOrUpdate(params T[] entities)
         {
             throw new NotImplementedException();
         }

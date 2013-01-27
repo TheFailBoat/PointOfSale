@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.Common;
+﻿using System.Data.Common;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using PointOfSale.Data.Entities;
 
 namespace PointOfSale.Data
 {
@@ -28,11 +22,6 @@ namespace PointOfSale.Data
         public DbSet<TModel> Table<TModel>() where TModel : class
         {
             return Set<TModel>();
-        }
-
-        protected override void OnModelCreating(DbModelBuilder modelBuilder)
-        {
-            
         }
     }
 }
