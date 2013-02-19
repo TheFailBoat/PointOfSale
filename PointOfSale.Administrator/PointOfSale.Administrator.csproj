@@ -50,10 +50,19 @@
     <Compile Include="Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pages\MainPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\MainPage.Designer.cs">
+      <DependentUpon>MainPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\MainPage.resx">
+      <DependentUpon>MainPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -86,6 +95,10 @@
     <ProjectReference Include="..\PointOfSale.Logic\PointOfSale.Logic.csproj">
       <Project>{5476e687-eb90-4057-aab3-2b349440db39}</Project>
       <Name>PointOfSale.Logic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PointOfSale.UI\PointOfSale.UI.csproj">
+      <Project>{4a3b056e-855b-4bb3-86c9-bc3c502e211e}</Project>
+      <Name>PointOfSale.UI</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
