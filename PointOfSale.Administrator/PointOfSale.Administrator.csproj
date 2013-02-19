@@ -4,15 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4A3B056E-855B-4BB3-86C9-BC3C502E211E}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{1C41B0A1-CAA2-40B5-923F-2A8244BC5CEC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PointOfSale.UI</RootNamespace>
-    <AssemblyName>PointOfSale.UI</AssemblyName>
+    <RootNamespace>PointOfSale.Administrator</RootNamespace>
+    <AssemblyName>PointOfSale.Administrator</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +23,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -36,61 +38,55 @@
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controls\ActionSelectPanel.cs">
-      <SubType>UserControl</SubType>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Controls\ActionSelectPanel.Designer.cs">
-      <DependentUpon>ActionSelectPanel.cs</DependentUpon>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\BillControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Controls\BillControl.Designer.cs">
-      <DependentUpon>BillControl.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\NavigationPanel.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Controls\NavigationPanel.Designer.cs">
-      <DependentUpon>NavigationPanel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\QuantityInputPanel.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Controls\QuantityInputPanel.Designer.cs">
-      <DependentUpon>QuantityInputPanel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\ValueInputPanel.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Controls\ValueInputPanel.Designer.cs">
-      <DependentUpon>ValueInputPanel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Models\InputAction.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Controls\ActionSelectPanel.resx">
-      <DependentUpon>ActionSelectPanel.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Controls\BillControl.resx">
-      <DependentUpon>BillControl.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Controls\NavigationPanel.resx">
-      <DependentUpon>NavigationPanel.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Controls\QuantityInputPanel.resx">
-      <DependentUpon>QuantityInputPanel.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Controls\ValueInputPanel.resx">
-      <DependentUpon>ValueInputPanel.cs</DependentUpon>
-    </EmbeddedResource>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\PointOfSale.Entity\PointOfSale.Entity.csproj">
+      <Project>{652691f4-fe2f-4c01-a723-c56a8343dae7}</Project>
+      <Name>PointOfSale.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PointOfSale.Logic\PointOfSale.Logic.csproj">
+      <Project>{5476e687-eb90-4057-aab3-2b349440db39}</Project>
+      <Name>PointOfSale.Logic</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

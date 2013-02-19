@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("PointOfSale.UI")]
+[assembly: AssemblyTitle("PointOfSale.Administrator")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("PointOfSale.UI")]
+[assembly: AssemblyProduct("PointOfSale.Administrator")]
 [assembly: AssemblyCopyright("Copyright ©  2013")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("358b06fa-8499-42a3-87e8-481a24fe1d3e")]
+[assembly: Guid("4dd58239-ae12-486b-b6cb-e7a075fc0d47")]
 
 // Version information for an assembly consists of the following four values:
 //

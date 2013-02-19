@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using PointOfSale.UI.Models;
 
-namespace PointOfSale.UI.Pages
+namespace PointOfSale.Client.Pages
 {
     public partial class MainPage : UserControl
     {

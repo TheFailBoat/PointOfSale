@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PointOfSale.UI.Pages
+namespace PointOfSale.Client.Pages
 {
     public partial class AdminPage : UserControl
     {

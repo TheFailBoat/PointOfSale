@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PointOfSale.UI
+namespace PointOfSale.Client
 {
     public partial class MainEntryForm : Form
     {

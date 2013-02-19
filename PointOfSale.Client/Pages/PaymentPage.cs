@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PointOfSale.UI.Pages
+namespace PointOfSale.Client.Pages
 {
-    public partial class TablePage : UserControl
+    public partial class PaymentPage : UserControl
     {
-        public TablePage()
+        public PaymentPage()
         {
             InitializeComponent();
         }

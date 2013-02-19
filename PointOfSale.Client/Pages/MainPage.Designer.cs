@@ -1,4 +1,4 @@
-﻿namespace PointOfSale.UI.Pages
+﻿namespace PointOfSale.Client.Pages
 {
     partial class MainPage
     {
@@ -98,8 +98,8 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private Controls.QuantityInputPanel quantityInputPanel1;
-        private Controls.ActionSelectPanel itemPanel;
-        private Controls.ActionSelectPanel categoryPanel;
+        private PointOfSale.UI.Controls.QuantityInputPanel quantityInputPanel1;
+        private PointOfSale.UI.Controls.ActionSelectPanel itemPanel;
+        private PointOfSale.UI.Controls.ActionSelectPanel categoryPanel;
     }
 }

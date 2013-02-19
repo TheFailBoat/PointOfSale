@@ -5,7 +5,7 @@ using Autofac;
 using Autofac.Integration.Mvc;
 using PointOfSale.Logic.Data;
 
-namespace PointOfSale.UI
+namespace PointOfSale.Client
 {
     static class Program
     {

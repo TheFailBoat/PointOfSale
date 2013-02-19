@@ -1,4 +1,4 @@
-﻿namespace PointOfSale.UI.Pages
+﻿namespace PointOfSale.Client.Pages
 {
     partial class TablePage
     {

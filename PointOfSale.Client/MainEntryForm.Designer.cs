@@ -1,4 +1,4 @@
-﻿namespace PointOfSale.UI
+﻿namespace PointOfSale.Client
 {
     partial class MainEntryForm
     {
@@ -31,7 +31,7 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.navigationPanel1 = new PointOfSale.UI.Controls.NavigationPanel();
             this.billControl1 = new PointOfSale.UI.Controls.BillControl();
-            this.mainPage1 = new PointOfSale.UI.Pages.MainPage();
+            this.mainPage1 = new PointOfSale.Client.Pages.MainPage();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -94,8 +94,8 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private Controls.NavigationPanel navigationPanel1;
-        private Controls.BillControl billControl1;
+        private PointOfSale.UI.Controls.NavigationPanel navigationPanel1;
+        private PointOfSale.UI.Controls.BillControl billControl1;
         private Pages.MainPage mainPage1;
     }
 }
