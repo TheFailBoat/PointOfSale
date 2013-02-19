@@ -16,5 +16,10 @@ namespace PointOfSale.Client
         {
             InitializeComponent();
         }
+
+        private void MainEntryForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
