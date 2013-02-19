@@ -86,8 +86,12 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1008, 729);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Cursor = System.Windows.Forms.Cursors.Default;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "MainEntryForm";
             this.Text = "Main";
+            this.TopMost = true;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
