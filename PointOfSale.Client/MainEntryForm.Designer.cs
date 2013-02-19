@@ -63,6 +63,7 @@
             // 
             // billControl1
             // 
+            this.billControl1.BackColor = System.Drawing.Color.White;
             this.billControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.billControl1.Location = new System.Drawing.Point(507, 3);
             this.billControl1.Name = "billControl1";
@@ -82,10 +83,18 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1008, 729);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Cursor = System.Windows.Forms.Cursors.Default;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "MainEntryForm";
             this.Text = "Main";
+            this.TopMost = true;
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.MainEntryForm_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
