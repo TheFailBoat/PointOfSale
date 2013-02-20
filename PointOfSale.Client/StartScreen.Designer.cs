@@ -109,7 +109,7 @@
             this.MinimizeBox = false;
             this.Name = "StartScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "StartScreen";
+            this.Text = "TFB POS";
             this.Load += new System.EventHandler(this.StartScreen_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
