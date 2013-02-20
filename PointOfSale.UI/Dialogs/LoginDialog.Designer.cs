@@ -36,6 +36,8 @@
             this.loginButton = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.dialogText = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -44,30 +46,33 @@
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40.44944F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 59.55056F));
-            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.label2, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.passwordField, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.usernameField, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.loginButton, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.label2, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.passwordField, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.usernameField, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.loginButton, 1, 5);
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.dialogText, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.label4, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.comboBox1, 1, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 5;
+            this.tableLayoutPanel1.RowCount = 6;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(356, 179);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(356, 204);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Location = new System.Drawing.Point(3, 90);
+            this.label1.Location = new System.Drawing.Point(3, 115);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(138, 25);
             this.label1.TabIndex = 0;
@@ -78,7 +83,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Location = new System.Drawing.Point(3, 115);
+            this.label2.Location = new System.Drawing.Point(3, 140);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(138, 25);
             this.label2.TabIndex = 1;
@@ -87,7 +92,7 @@
             // 
             // passwordField
             // 
-            this.passwordField.Location = new System.Drawing.Point(147, 118);
+            this.passwordField.Location = new System.Drawing.Point(147, 143);
             this.passwordField.Name = "passwordField";
             this.passwordField.Size = new System.Drawing.Size(206, 20);
             this.passwordField.TabIndex = 2;
@@ -95,14 +100,14 @@
             // 
             // usernameField
             // 
-            this.usernameField.Location = new System.Drawing.Point(147, 93);
+            this.usernameField.Location = new System.Drawing.Point(147, 118);
             this.usernameField.Name = "usernameField";
             this.usernameField.Size = new System.Drawing.Size(206, 20);
             this.usernameField.TabIndex = 3;
             // 
             // loginButton
             // 
-            this.loginButton.Location = new System.Drawing.Point(147, 143);
+            this.loginButton.Location = new System.Drawing.Point(147, 168);
             this.loginButton.Name = "loginButton";
             this.loginButton.Size = new System.Drawing.Size(75, 30);
             this.loginButton.TabIndex = 4;
@@ -135,11 +140,31 @@
             this.dialogText.Text = "Please Enter your Username and Password";
             this.dialogText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label4.Location = new System.Drawing.Point(3, 90);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(138, 25);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "POS Server";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(147, 93);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(206, 21);
+            this.comboBox1.TabIndex = 9;
+            // 
             // LoginDialog
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(356, 179);
+            this.ClientSize = new System.Drawing.Size(356, 204);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
@@ -163,5 +188,7 @@
         private System.Windows.Forms.Button loginButton;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label dialogText;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
