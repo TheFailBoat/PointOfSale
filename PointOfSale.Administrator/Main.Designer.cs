@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.header1 = new PointOfSale.UI.Controls.Admin.Header();
             this.mainPage1 = new PointOfSale.Administrator.Pages.MainPage();
+            this.header1 = new PointOfSale.UI.Controls.Admin.Header();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,13 +50,6 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1008, 729);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // header1
-            // 
-            this.header1.Location = new System.Drawing.Point(3, 3);
-            this.header1.Name = "header1";
-            this.header1.Size = new System.Drawing.Size(1002, 69);
-            this.header1.TabIndex = 3;
-            // 
             // mainPage1
             // 
             this.mainPage1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -65,6 +58,13 @@
             this.mainPage1.Size = new System.Drawing.Size(1002, 648);
             this.mainPage1.TabIndex = 2;
             // 
+            // header1
+            // 
+            this.header1.Location = new System.Drawing.Point(3, 3);
+            this.header1.Name = "header1";
+            this.header1.Size = new System.Drawing.Size(1002, 69);
+            this.header1.TabIndex = 3;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -72,7 +72,9 @@
             this.ClientSize = new System.Drawing.Size(1008, 729);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Main";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Point Of Sale Administrator";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
