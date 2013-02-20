@@ -40,7 +40,7 @@ namespace PointOfSale.Client
 
         private void startPOSButton_Click(object sender, EventArgs e)
         {
-            System.Threading.Thread t = new System.Threading.Thread(
+            Thread t = new Thread(
                    new ThreadStart(POSThreadTarget));
             t.Start();
 
