@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace PointOfSale.Client
@@ -17,7 +18,7 @@ namespace PointOfSale.Client
             InitializeComponent();
         }
 
-        public static void ThreadProc()
+        public static void POSThreadTarget()
         {
             Application.Run(new MainEntryForm());
         }
@@ -40,7 +41,7 @@ namespace PointOfSale.Client
         private void startPOSButton_Click(object sender, EventArgs e)
         {
             System.Threading.Thread t = new System.Threading.Thread(
-                   new System.Threading.ThreadStart(ThreadProc));
+                   new ThreadStart(POSThreadTarget));
             t.Start();
 
         }
