@@ -21,5 +21,10 @@ namespace PointOfSale.Client
         {
 
         }
+
+        private void mainPage1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

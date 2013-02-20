@@ -24,7 +24,7 @@ namespace PointOfSale.Client
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainEntryForm());
+            Application.Run(new StartScreen());
         }
 
         private static void BuildContainer(ContainerBuilder builder)

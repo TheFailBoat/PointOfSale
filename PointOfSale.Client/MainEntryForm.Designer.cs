@@ -78,6 +78,7 @@
             this.mainPage1.Name = "mainPage1";
             this.mainPage1.Size = new System.Drawing.Size(498, 648);
             this.mainPage1.TabIndex = 2;
+            this.mainPage1.Load += new System.EventHandler(this.mainPage1_Load);
             // 
             // MainEntryForm
             // 
