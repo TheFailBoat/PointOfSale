@@ -29,22 +29,22 @@ namespace PointOfSale.UI.Dialogs
             dialogText.ForeColor = isError ? Color.Red : dialogTextColor;
         }
 
-        public override void Show(string username, string message, bool isError)
+        public void Show(string username, string message, bool isError)
         {
             usernameField.Text = username;
             dialogText.Text = message;
             dialogText.ForeColor = isError ? Color.Red : dialogTextColor;
 
-            base.Show();
+            Show();
         }
 
-        public override void ShowDialog(string username, string message, bool isError)
+        public void ShowDialog(string username, string message, bool isError)
         {
             usernameField.Text = username;
             dialogText.Text = message;
             dialogText.ForeColor = isError ? Color.Red : dialogTextColor;
 
-            base.ShowDialog();
+            ShowDialog();
         }
     }
 }
