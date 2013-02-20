@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.startAdmin = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
             this.settingsButton = new System.Windows.Forms.Button();
             this.startPOSButton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.startAdmin = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -48,6 +48,15 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 308);
             this.panel1.TabIndex = 0;
+            // 
+            // startAdmin
+            // 
+            this.startAdmin.Location = new System.Drawing.Point(3, 76);
+            this.startAdmin.Name = "startAdmin";
+            this.startAdmin.Size = new System.Drawing.Size(194, 70);
+            this.startAdmin.TabIndex = 4;
+            this.startAdmin.Text = "Start Admin Program";
+            this.startAdmin.UseVisualStyleBackColor = true;
             // 
             // exitButton
             // 
@@ -88,15 +97,6 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // startAdmin
-            // 
-            this.startAdmin.Location = new System.Drawing.Point(3, 76);
-            this.startAdmin.Name = "startAdmin";
-            this.startAdmin.Size = new System.Drawing.Size(194, 70);
-            this.startAdmin.TabIndex = 4;
-            this.startAdmin.Text = "Start Admin Program";
-            this.startAdmin.UseVisualStyleBackColor = true;
-            // 
             // StartScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -104,6 +104,7 @@
             this.ClientSize = new System.Drawing.Size(542, 331);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "StartScreen";
