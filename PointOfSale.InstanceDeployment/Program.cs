@@ -20,7 +20,12 @@ namespace PointOfSale.InstanceDeployment
             {
                 switch (arg)
                 {
-                    
+                    default:
+                        //invalid argument
+                        Console.WriteLine("The argument " + arg + " is invalid.");
+                        PrintHelp();
+                        Exit();
+                        break;
                 }
             }
             
@@ -35,6 +40,25 @@ namespace PointOfSale.InstanceDeployment
             EfDataContext efContext = new EfDataContext(connection);
 
             //Do stuff here...
+        }
+
+        static void PrintHelp()
+        {
+            Console.WriteLine("");
+            Console.WriteLine("TFB PointOfSale Instance Deployment Manager");
+            Console.WriteLine("");
+            Console.WriteLine("Usage: posDeploy.exe -server=localhost -user=sa -password=letmein");
+            //to finish
+        }
+
+        static void Exit()
+        {
+            Exit(0);
+        }
+
+        static void Exit(int errorCode)
+        {
+            Environment.Exit(errorCode);
         }
     }
 }
