@@ -8,8 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Threading;
 using System.Windows.Forms;
+using System.Diagnostics;
 
-namespace PointOfSale.Client
+namespace PointOfSale.Start
 {
     public partial class StartScreen : Form
     {
@@ -18,10 +19,6 @@ namespace PointOfSale.Client
             InitializeComponent();
         }
 
-        public static void POSThreadTarget()
-        {
-            Application.Run(new MainEntryForm());
-        }
 
         private void StartScreen_Load(object sender, EventArgs e)
         {
@@ -40,10 +37,7 @@ namespace PointOfSale.Client
 
         private void startPOSButton_Click(object sender, EventArgs e)
         {
-            Thread t = new Thread(
-                   new ThreadStart(POSThreadTarget));
-            t.Start();
-
+            Process.Start("PointOfSale.Client.exe");
         }
     }
 }

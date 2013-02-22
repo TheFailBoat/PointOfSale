@@ -1,4 +1,4 @@
-﻿namespace PointOfSale.Client
+﻿namespace PointOfSale.Start
 {
     partial class StartScreen
     {
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StartScreen));
             this.panel1 = new System.Windows.Forms.Panel();
             this.startAdmin = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
@@ -89,7 +90,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::PointOfSale.Client.Properties.Resources.photo;
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(218, 12);
             this.pictureBox1.Name = "pictureBox1";
