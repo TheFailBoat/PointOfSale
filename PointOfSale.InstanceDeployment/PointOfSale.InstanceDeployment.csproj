@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DbConfiguration.cs" />
+    <Compile Include="DeploymentConfiguration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -58,6 +59,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\PointOfSale.Entity\PointOfSale.Entity.csproj">
+      <Project>{652691f4-fe2f-4c01-a723-c56a8343dae7}</Project>
+      <Name>PointOfSale.Entity</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PointOfSale.Logic\PointOfSale.Logic.csproj">
       <Project>{5476e687-eb90-4057-aab3-2b349440db39}</Project>
       <Name>PointOfSale.Logic</Name>
