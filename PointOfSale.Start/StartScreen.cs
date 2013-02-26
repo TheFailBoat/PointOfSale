@@ -14,6 +14,9 @@ namespace PointOfSale.Start
 {
     public partial class StartScreen : Form
     {
+        //Process for a POSCLIENT
+        private Process clientProcess = new Process();
+
         public StartScreen()
         {
             InitializeComponent();
@@ -37,7 +40,16 @@ namespace PointOfSale.Start
 
         private void startPOSButton_Click(object sender, EventArgs e)
         {
-            Process.Start("PointOfSale.Client.exe");
+            Process[] myProcesses = Process.GetProcessesByName
+                                            ("PointOfSale.Client.exe");
+            if (myProcesses.Length == 0)
+            {
+                clientProcess.StartInfo.FileName = "PointOfSale.Client.exe";
+                clientProcess.EnableRaisingEvents = true;
+                clientProcess.StartInfo.UseShellExecute = false;
+                clientProcess.StartInfo.RedirectStandardError = true;
+                clientProcess.Start();
+            }
         }
     }
 }
