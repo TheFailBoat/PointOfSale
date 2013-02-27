@@ -46,10 +46,19 @@ namespace PointOfSale.Start
             {
                 clientProcess.StartInfo.FileName = "PointOfSale.Client.exe";
                 clientProcess.EnableRaisingEvents = true;
+                clientProcess.Exited += new EventHandler(clientProcess_Exited);
                 clientProcess.StartInfo.UseShellExecute = false;
                 clientProcess.StartInfo.RedirectStandardError = true;
+                startPOSButton.Enabled = false;
                 clientProcess.Start();
             }
         }
+
+        private void clientProcess_Exited(object sender, System.EventArgs e)
+        {
+            startPOSButton.Invoke(new MethodInvoker(delegate { startPOSButton.Enabled = true; }));
+            
+        }
+
     }
 }
